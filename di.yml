@@ -1,0 +1,11 @@
+bfy.twig_asset_extension.manifest_filepath: '%app.dir.root%/web/assets/manifest.json'
+bfy.twig_asset_extension.asset_prefix:      '/assets'
+
+services:
+
+  bfy.butterfly_asset_twig_extension:
+    class: 'Butterfly\Component\TwigAssetsExtension\TwigAssetsExtension'
+    arguments:
+      - '%parameters/bfy.twig_asset_extension.manifest_filepath'
+      - '%parameters/bfy.twig_asset_extension.asset_prefix'
+    tags: 'bfy_adapter.twig.extensions'

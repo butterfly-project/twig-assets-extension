@@ -1,0 +1,25 @@
+{
+    "name": "butterfly/twig-assets-extension",
+    "type": "library",
+    "description": "Butterfly PHP. Twig Assets Extension",
+    "keywords": ["Twig", "Assets", "Webpack"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marat Fakhertdinov",
+            "email": "marat.fakhertdinov@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Butterfly\\Component\\TwigAssetsExtension\\": "src/",
+            "Butterfly\\Component\\TwigAssetsExtension\\Tests\\": "tests/unit/"
+        }
+    }
+}
